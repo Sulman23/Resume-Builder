@@ -23,8 +23,46 @@ h1 {
     max-width: 500px;
     margin: 0 auto;
     padding: 20px;
+    border-radius: 10px;
 }
 
 h2 {
     margin: 20px 0;
+}
+
+.form-group label {
+    display: none;
+    font-weight: 500;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.form-group input, textarea {
+    outline: none;
+    border: none;
+    border-bottom: 1px solid red;
+    display: block;
+    width: 100%;
+    font-family: Poppins-Regular;
+    font-size: 15px;
+    color: #555555;
+    line-height: 1.2;
+    margin-bottom: 10px;
+    padding: 3px 0;
+} 
+
+.form-group .upload-img {
+    display: block;
+    background-color: #f2709c;
+}
+.form-group ::placeholder {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+button {
+    padding: 5px 10px;
+    background-color:#f2709c;
+    border: none;
+    border-radius: 3px;
+    margin-bottom: 10px;
+    cursor: pointer;
 }
