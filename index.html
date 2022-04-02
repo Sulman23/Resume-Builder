@@ -8,10 +8,13 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div id="container" class="main-container">
-       <!-- Main Title -->
-        <h1>Resume Builder</h1>
-
+   <!-- Header -->
+   <header>
+      <h1>Resume Builder</h1>
+   </header>
+   <!-- Main Container -->
+    <div id="container" class="container">
+       <!-- form wrapper -->
        <div class="form-wrap">
            <form action="" id="form" class="my-form">
              <h2>Personal Information</h2>
@@ -57,28 +60,32 @@
                 <label for="summry">Professional Summry</label>
                 <textarea name="textarea" id="summry" cols="20" rows="3" placeholder="Professional Summry"></textarea>
              </div>
-
               <!-- for Skills -->
               <div class="form-group">
                 <label for="skills">Skills</label>
                 <textarea name="textarea" id="skills" cols="20" rows="3" placeholder="Skills"></textarea>
              </div>
-
               <!-- for Experience -->
               <div class="form-group">
                 <label for="experience">Experience</label>
                 <textarea name="textarea" id="experience" cols="20" rows="3" placeholder="Experience"></textarea>
              </div>
+             <!-- Add more button for Experience -->
              <button id="exp">Add More</button>
-              <!-- for Education -->
-              <div class="form-group">
+             <!-- for Education -->
+             <div class="form-group">
                 <label for="education">Education</label>
                 <textarea name="textarea" id="education" cols="20" rows="3" placeholder="Education"></textarea>
-             </div>
+               </div>
+            <!-- Add more button for education -->
              <button id="edu">Add More</button>
 
            </form>
        </div> 
+       <!-- Resume Previw -->
+       <div id="preview" class="preview-img">
+          <img src="images/preview.png" alt="Resume Previw images">
+       </div>
     </div>
     
     <script src="script.js"></script>

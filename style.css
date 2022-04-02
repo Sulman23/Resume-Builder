@@ -9,12 +9,16 @@ body {
     /* text-align: center; */
 }
 
-.main-container {
+.container {
     background-color: aquamarine;
     text-align: center;
 }
 
-h1 {
+header {
+    background-color: #bd72ff;
+}
+
+header h1 {
     margin: 20px 0;
 }
 
@@ -47,22 +51,32 @@ h2 {
     color: #555555;
     line-height: 1.2;
     margin-bottom: 10px;
-    padding: 3px 0;
+    padding: 5px 2px;
 } 
 
-.form-group .upload-img {
+/* .form-group .upload-img {
     display: block;
     background-color: #f2709c;
-}
+} */
+
 .form-group ::placeholder {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 button {
-    padding: 5px 10px;
+    padding: 6px 12px;
     background-color:#f2709c;
     border: none;
     border-radius: 3px;
     margin-bottom: 10px;
     cursor: pointer;
+}
+
+.preview-img {
+    background-color: aqua;
+    margin: 10px;
+}
+
+.preview-img img {
+    width: 300px;
 }
