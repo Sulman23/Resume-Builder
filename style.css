@@ -6,23 +6,21 @@
 
 body {
     background: linear-gradient(to right, #f2709c, #ff9472);
-    /* text-align: center; */
 }
 
 .container {
     background-color: aquamarine;
-    text-align: center;
 }
 
 header {
     background-color: #bd72ff;
-}
-
-header h1 {
+    text-align: center;
     margin: 20px 0;
+    padding: 5px 0;
 }
 
 .form-wrap {
+    display: none;
     background-color: aliceblue;
     max-width: 500px;
     margin: 0 auto;
@@ -35,7 +33,7 @@ h2 {
 }
 
 .form-group label {
-    display: none;
+    /* display: none; */
     font-weight: 500;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
@@ -43,15 +41,14 @@ h2 {
 .form-group input, textarea {
     outline: none;
     border: none;
-    border-bottom: 1px solid red;
+    border-bottom: 1px solid #f2709c;
     display: block;
     width: 100%;
-    font-family: Poppins-Regular;
     font-size: 15px;
     color: #555555;
     line-height: 1.2;
-    margin-bottom: 10px;
-    padding: 5px 2px;
+    margin: 10px 0;
+    padding: 10px 5px;
 } 
 
 /* .form-group .upload-img {
@@ -60,11 +57,11 @@ h2 {
 } */
 
 .form-group ::placeholder {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 button {
-    padding: 6px 12px;
+    padding: 8px 10px;
     background-color:#f2709c;
     border: none;
     border-radius: 3px;
@@ -72,11 +69,13 @@ button {
     cursor: pointer;
 }
 
-.preview-img {
-    background-color: aqua;
-    margin: 10px;
+button:hover {
+    background-color: #333;
+    color: #f2709c;
 }
 
-.preview-img img {
-    width: 300px;
-}
+/* .resume-template {
+    background-color: aqua;
+    margin: 10px;
+} */
+
