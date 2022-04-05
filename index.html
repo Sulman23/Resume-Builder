@@ -11,153 +11,179 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Main Container -->
-    <div id="container" class="container">
       <!-- Header -->
-      <header>
+      <header class="text-center p-1">
          <h1>Resume Builder</h1>
       </header>
-       <!-- form wrapper -->
-       <div class="form-wrap">
-           <form action="" id="form" class="my-form">
-             <h2>Personal Information</h2>
-             <!-- for Name -->
-             <div class="form-group">
-                 <label for="name">Full Name</label>
-                 <input type="text" id="name" placeholder="Full Name">
-             </div> 
-             <!-- for job Title -->
-             <div class="form-group">
-                <label for="job">Job Title</label>
-                <input type="text" id="job" placeholder="Job Title">
-             </div>  
-             <!-- for Profile image  -->
-             <div class="form-group">
-                <label for="image" class="upload-img">Profile Image</label>
-                <input type="file" id="image" >
-             </div>
-             <!-- for Email  -->
-             <div class="form-group">
-                <label for="email">Email</label>
-                <input type="email" id="Email" placeholder="Email">
-             </div>
-             <!-- for Phone -->
-             <div class="form-group">
-                <label for="phone">Phone</label>
-                <input type="tel" id="phone" placeholder="Phone">
-             </div>
-             <!-- for Address -->
-             <div class="form-group">
-                <label for="address">Address</label>
-                <textarea name="textarea" id="address" cols="20" rows="3" placeholder="Address"></textarea>
-             </div>
-                <!-- for GitHub -->
-             <div class="form-group">
-                <label for="github">Github</label>
-                <input type="text" id="github" placeholder="GitHub">
-             </div>
+      <!-- end of Header -->
 
-             <h2>Professional Information</h2>
-              <!-- for Profession summry -->
-              <div class="form-group">
-                <label for="summry">Professional Summry</label>
-                <textarea name="textarea" id="summry" cols="20" rows="3" placeholder="Professional Summry"></textarea>
-             </div>
-              <!-- for Skills -->
-              <div class="form-group">
-                <label for="skills">Skills</label>
-                <textarea name="textarea" id="skills" cols="20" rows="3" placeholder="Skills"></textarea>
-             </div>
-              <!-- for Experience -->
-              <div class="form-group">
-                <label for="experience">Experience</label>
-                <textarea name="textarea" id="experience" cols="20" rows="3" placeholder="Experience"></textarea>
-             </div>
-             <!-- Add more button for Experience -->
-             <button id="exp">Add More</button>
-             <!-- for Education -->
-             <div class="form-group">
-                <label for="education">Education</label>
-                <textarea name="textarea" id="education" cols="20" rows="3" placeholder="Education"></textarea>
-               </div>
-            <!-- Add more button for education -->
-             <button id="edu">Add More</button>
-
-           </form>
-       </div> 
-       <!-- Resume Template -->
-       <div id="template" class="resume-template">
-          <div class="personal-info">
-             <div class="profile-img">
-                <img src="./images/avatar.webp" alt="Profile image">
-             </div>
-             <div class="info">
-                <h1>Jhon Doe</h1>
-                <address>
-                   <p>HN: 123, St: 123,</p>
-                   <p>Distic: ABC, State: Los Angels، USA</p>
-               </address>
-               <p>abc@email.com</p>
-               <p>www.github.com</p>
-             </div>
-          </div><!-- end of Personal Info -->
-          <div class="profile">
-             <h2>Profile</h2>
-             <p>
-               Knowledgeable and Skilled Software Developer commended for contributing to innovative,
-               groundbreaking software solutions to meet business demands and needs. Skilled at
-               translating business requirements into viable, scalable solutions.
-             </p>
-          </div><!-- end of profile -->
-          <div class="skills">
-            <h2>SKILLS</h2>
-
-            <div class="main-skills">
-               <h3>Bakend</h3>
-               <ul>
-                  <li>C++</li>
-                  <li>C# (Web Applications)</li>
-                  <li>Java SE (Desktop Applications)</li>
-                  <li>PHP, Ajax, NodeJS</li>
-               </ul>
-               <h3>Frontend</h3>
-               <ul>
-                  <li>HTML5, CSS3, PSD to HTML</li>
-                  <li>JavaScript, JQuery, Ajax, AngularJS</li>
-                  <li>Java SE (Desktop Applications)</li>
-                  <li>CSS Frameworks: Bootstrap</li>
-               </ul>
-            </div><!-- end of main skills -->
-
-            <div class="other-skills">
-               <h3>Other:</h3>
-               <ul>
-                  <li>Team leadership</li>
-                  <li>Requirements gathering</li>
-                  <li>Project management</li>
-                  <li>Amazon Web Services</li>
-                  <li>Team leadership</li>
-                  <li>Requirements gathering</li>
-                  <li>Project management</li>
-                  <li>Amazon Web Services</li>
-                  <li>Team leadership</li>
-                  <li>Requirements gathering</li>
-                  <li>Project management</li>
-                  <li>Amazon Web Services</li>
-               </ul>
+    <!-- Form Container -->
+    <div class="container">
+      <div class="row" style="display: none;">
+      <!-- Preview -->
+      <div class="col-md-6 preview">
+         <div class="row">
+            <div class="col-12 text-center my-5">
+               <h3 class="mb-3">Light Version</h3>
+               <img src="./images/preview.png" class="img-thumbnail img-fluid" alt="">
             </div>
+            <div class="col-12 text-center my-5">
+               <h3 class="mb-3">Dark Version</h3>
+               <img src="./images/preview.png" class="img-thumbnail img-fluid" alt="">
+            </div>
+         </div>
+      </div><!-- end of preview -->
 
-          </div><!-- end of skills -->
+  <!-- form wrapper -->
+  <div class="col-md-6 rounded-3 my-4 p-3 form-wrap">
+   <form id="form" class="my-form">
+     <h2>Personal Information</h2>
+     <!-- for Name -->
+     <div class="mb-2">
+         <label for="name" class="form-label">Full Name</label>
+         <input type="text" id="name" class="form-control" placeholder="Jhon Doe">
+     </div> 
+     <!-- for job Title -->
+     <div class="mb-2">
+        <label for="job" class="form-label">Job Title</label>
+        <input type="text" id="job" class="form-control" placeholder="Web Developer">
+     </div>  
+     <!-- for Profile image  -->
+     <div class="mb-2">
+        <label for="image" class="form-label upload-img">Profile Image</label>
+        <input type="file" id="image" class="form-control">
+     </div>
+     <!-- for Email  -->
+     <div class="mb-2">
+        <label for="email" class="form-label">Email</label>
+        <input type="email" id="Email" class="form-control" placeholder="abc@email.com">
+     </div>
+     <!-- for Phone -->
+     <div class="mb-2">
+        <label for="phone" class="form-label">Phone</label>
+        <input type="tel" id="phone" class="form-control" placeholder="0123456789">
+     </div>
+     <!-- for Address -->
+     <div class="mb-2">
+        <label for="address" class="form-label">Address</label>
+        <textarea name="textarea" id="address" class="form-control" cols="20" rows="3" placeholder="Address"></textarea>
+     </div>
+        <!-- for GitHub -->
+     <div class="mb-2">
+        <label for="github" class="form-label">Github</label>
+        <input type="text" id="github" class="form-control" placeholder="GitHub">
+     </div>
 
-          <div class="experience">
-             <h2>Experience</h2>
-             <h3>Software Engineer <span>| Amazone Pve Ltd</span> <span class="city"> - New York</span></h3>
-          </div><!-- end of Experience-->
+     <h2>Professional Information</h2>
+      <!-- for Profession summry -->
+      <div class="mb-2">
+        <label for="summry" class="form-label">Professional Summry</label>
+        <textarea name="textarea" id="summry" class="form-control" cols="20" rows="3" placeholder="Professional Summry"></textarea>
+     </div>
+      <!-- for Skills -->
+      <div class="mb-2">
+        <label for="skills" class="form-label">Skills</label>
+        <textarea name="textarea" id="skills" class="form-control" cols="20" rows="3" placeholder="HTML, CSS, JAVASCRIPT ..."></textarea>
+     </div>
+      <!-- for Experience -->
+      <div class="mb-2">
+        <label for="experience" class="form-label">Experience</label>
+        <textarea name="textarea" id="experience" class="form-control" cols="20" rows="3" placeholder="Experience"></textarea>
+     </div>
+     <!-- Add more button for Experience -->
+     <button type="submit" id="btnExp" class="btn btn-sm btn-info mb-2">Add More</button>
+     <!-- for Education -->
+     <div class="mb-2">
+        <label for="education" class="form-label">Education</label>
+        <textarea name="textarea" id="education" class="form-control" cols="20" rows="3" placeholder="Education"></textarea>
+       </div>
+    <!-- Add more button for education -->
+    <button type="submit" id="btnEdu" class="btn btn-sm btn-info mb-2">Add More</button>
+
+   </form>
+</div>
+      </div><!-- end of main row -->
+    <div><!-- end of form -->
+
+   <!-- Template container -->
+    <div class="container">
+       <!-- Resume Template -->
+       <div id="template" class="row resume-template">
+          <div class="container">
+             <div class="col-md-2">
+               <img src="./images/avatar.webp" alt="Profile image">
+             </div>
+             <div class="col-md-10">
+               <h1>Jhon Doe</h1>
+               <address>
+                  <p>HN: 123, St: 123,</p>
+                  <p>Distic: ABC, State: Los Angels، USA</p>
+              </address>
+              <p>abc@email.com</p>
+              <p>www.github.com</p>
+             </div>  <!-- end of Personal Info -->
+
+             <div class="col-md-12 profile">
+               <h2>Profile</h2>
+               <p>
+                 Knowledgeable and Skilled Software Developer commended for contributing to innovative,
+                 groundbreaking software solutions to meet business demands and needs. Skilled at
+                 translating business requirements into viable, scalable solutions.
+               </p>
+            </div><!-- end of profile -->
+
+            <div class="row skills">
+               <h2>SKILLS</h2>
+   
+               <div class="col-md-6 main-skills">
+                  <h3>Bakend</h3>
+                  <ul>
+                     <li>C++</li>
+                     <li>C# (Web Applications)</li>
+                     <li>Java SE (Desktop Applications)</li>
+                     <li>PHP, Ajax, NodeJS</li>
+                  </ul>
+                  <h3>Frontend</h3>
+                  <ul>
+                     <li>HTML5, CSS3, PSD to HTML</li>
+                     <li>JavaScript, JQuery, Ajax, AngularJS</li>
+                     <li>Java SE (Desktop Applications)</li>
+                     <li>CSS Frameworks: Bootstrap</li>
+                  </ul>
+               </div><!-- end of main skills -->
+   
+               <div class="col-md-6 other-skills">
+                  <h3>Other:</h3>
+                  <ul>
+                     <li>Team leadership</li>
+                     <li>Requirements gathering</li>
+                     <li>Project management</li>
+                     <li>Amazon Web Services</li>
+                     <li>Team leadership</li>
+                     <li>Requirements gathering</li>
+                     <li>Project management</li>
+                     <li>Amazon Web Services</li>
+                     <li>Team leadership</li>
+                     <li>Requirements gathering</li>
+                     <li>Project management</li>
+                     <li>Amazon Web Services</li>
+                  </ul>
+               </div>
+   
+             </div><!-- end of skills -->
+
+             <div class="experience">
+               <h2>Experience</h2>
+               <h3>Software Engineer <span>| Amazone Pve Ltd</span> <span class="city"> - New York</span></h3>
+            </div><!-- end of Experience-->
+
+          </div><!-- end inner container -->
        </div><!-- end of template -->
-   </div>
+   </div><!-- end of Template container -->
+
    <!-- Bootstrap javaScript -->
    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
    <!-- My javascript -->
-    <script src="script.js"></script>
+   <script src="script.js"></script>
 </body>
 </html>

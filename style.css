@@ -1,60 +1,39 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 body {
     background: linear-gradient(to right, #f2709c, #ff9472);
 }
 
-.container {
+/* .container {
     background-color: aquamarine;
-}
+} */
 
-header {
+/* header {
     background-color: #bd72ff;
-    text-align: center;
-    margin: 20px 0;
-    padding: 5px 0;
-}
+} */
 
 .form-wrap {
-    display: none;
-    background-color: aliceblue;
-    max-width: 500px;
-    margin: 0 auto;
-    padding: 20px;
-    border-radius: 10px;
+    background: rgba(0, 0, 0, 0.5);
+    color: #efefef;
 }
 
-h2 {
-    margin: 20px 0;
+.preview img {
+    width: 300px;
 }
 
-.form-group label {
-    /* display: none; */
-    font-weight: 500;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-
-.form-group input, textarea {
-    outline: none;
-    border: none;
-    border-bottom: 1px solid #f2709c;
-    display: block;
-    width: 100%;
-    font-size: 15px;
-    color: #555555;
-    line-height: 1.2;
-    margin: 10px 0;
-    padding: 10px 5px;
+.my-form label {
+    font-family: 'Times New Roman', Times, serif
 } 
 
-/* .form-group .upload-img {
+/* .my-form input, textarea {
+    background-color: rgba(0, 0, 0, 0.75);
+    outline: none;
+    border: none;
+    color: rgb(125, 122, 122);
+}  */
+/*
+.form-group .upload-img {
     display: block;
     background-color: #f2709c;
-} */
+} 
 
 .form-group ::placeholder {
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -66,16 +45,15 @@ button {
     border: none;
     border-radius: 3px;
     margin-bottom: 10px;
-    cursor: pointer;
+    cursor: pointer; 
 }
 
 button:hover {
-    background-color: #333;
-    color: #f2709c;
+     background-color: #333;
+    color: #f2709c; 
 }
-
-/* .resume-template {
-    background-color: aqua;
-    margin: 10px;
-} */
+*/
+ .resume-template {
+    background-color: white;
+} 
 
