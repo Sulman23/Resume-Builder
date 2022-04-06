@@ -40,7 +40,7 @@
          <!-- form wrapper -->
          <div class="col-md-6 rounded-3 my-4 p-3 form-wrap">
             <form id="form" class="my-form">
-               <h2>Personal Information</h2>
+               <h3>Personal Information</h2>
                <!-- for Name -->
                <div class="mb-2">
                   <label for="name" class="form-label">Full Name</label>
@@ -112,42 +112,51 @@
       </div><!-- end of form builder row -->
 
       <!-- Resume Template -->
-      <div id="template" class="row resume-template">
-         
-         <div class="col-md-2 text-center">
-            <img src="./images/avatar.webp" class="img-thumbnail" alt="Profile image">
-         </div>
-         <div class="col-md-10">
-            <h1>Jhon Doe</h1>
-            <address>
-               <p>HN: 123, St: 123,</p>
-               <p>Distic: ABC, State: Los Angels، USA</p>
-            </address>
-            <p>abc@email.com</p>
-            <p>www.github.com</p>
-         </div> <!-- end of Personal Info -->
+      <div class="row resume-template">
+         <div class="col-12">
+            <div class="container inner-container">
 
-         <div class="col-md-12 profile">
-            <h2>Profile</h2>
-            <p>
-               Knowledgeable and Skilled Software Developer commended for contributing to innovative,
-               groundbreaking software solutions to meet business demands and needs. Skilled at
-               translating business requirements into viable, scalable solutions.
-            </p>
-         </div><!-- end of profile -->
+               <div class="row personal-info p-5">
+                  <div class="col-md-3 text-center">
+                     <img src="./images/avatar.webp" class="img-fluid" alt="Profile image">
+                  </div>
+      
+                  <div class="col-md-9">
+                     <h1>Micheal Jhon Smith</h1>
+                     <address>
+                        <p>HN: 123, St: 123,</p>
+                        <p>Distic: ABC, State: Los Angels، USA</p>
+                     </address>
+                     <p>abc@email.com</p>
+                     <p>www.github.com</p>
+                  </div>
+               </div><!-- end of Personal Info -->
+
+               <div class="row profile">
+                  <div class="col-12 ">
+                     <h3>PROFILE</h3>
+                     <p>
+                        Knowledgeable and Skilled Software Developer commended for contributing to innovative,
+                        groundbreaking software solutions to meet business demands and needs. Skilled at
+                        translating business requirements into viable, scalable solutions. Knowledgeable and Skilled Software Developer commended for contributing to innovative,
+                        groundbreaking software solutions to meet business demands and needs. Skilled at
+                        translating business requirements into viable, scalable solutions.
+                     </p>
+                  </div>
+               </div> <!-- end of profile -->
 
          <div class="row skills">
-            <h2>SKILLS</h2>
+            <h3>SKILLS</h3>
 
             <div class="col-md-6 main-skills">
-               <h3>Bakend</h3>
+               <h5>Bakend</h5>
                <ul>
                   <li>C++</li>
                   <li>C# (Web Applications)</li>
                   <li>Java SE (Desktop Applications)</li>
                   <li>PHP, Ajax, NodeJS</li>
                </ul>
-               <h3>Frontend</h3>
+               <h5>Frontend</h5>
                <ul>
                   <li>HTML5, CSS3, PSD to HTML</li>
                   <li>JavaScript, JQuery, Ajax, AngularJS</li>
@@ -157,7 +166,7 @@
             </div><!-- end of main skills -->
 
             <div class="col-md-6 other-skills">
-               <h3>Other:</h3>
+               <h5>Other:</h5>
                <ul>
                   <li>Team leadership</li>
                   <li>Requirements gathering</li>
@@ -176,12 +185,58 @@
 
          </div><!-- end of skills -->
 
-         <div class="experience">
-            <h2>Experience</h2>
-            <h3>Software Engineer <span>| Amazone Pve Ltd</span> <span class="city"> - New York</span></h3>
+         <div class="row experience">
+            <h3>Experience</h3>
+
+            <div class="col-md-4">
+               <h5>Software Engineer</h5>
+            </div>
+            <div class="col-md-5">
+               <span>| Amazone Pve Ltd</span> <span class="city"> - New York</span>
+            </div>
+            <div class="col-md-3 text-end">
+               <span>08/2018-07/2019</span>
+            </div>
+
+           <div class="col-12">
+            <ul>
+               <li>HTML5, CSS3, PSD to HTML</li>
+               <li>JavaScript, JQuery, Ajax, AngularJS JavaScript, JQuery, Ajax, AngularJS JavaScript, JQuery, Ajax, AngularJS JavaScript, JQuery, Ajax, AngularJS</li>
+               <li>Java SE (Desktop Applications) Used PHP Code Igniter framework to build APIs for web-based WebinardHD
+                  software. (http://webinarhd.com/)
+               </li>
+               <li>CSS Frameworks: Bootstrap</li>
+            </ul>
+           </div>
+            
          </div><!-- end of Experience-->
 
+         <div class="row education">
+            <h3>Education</h3>
+
+            <div class="col-md-4">
+               <h5>Bachelors: Computer Science</h5>
+            </div>
+            <div class="col-md-5">
+               <span>| National University Islamabad FAST</span> <span class="city"> - New York</span>
+            </div>
+            <div class="col-md-3 text-end">
+               <span>08/2018-07/2019</span>
+            </div>
+
+           <div class="col-12">
+            <ul>
+               <li>HTML5, CSS3, PSD to HTML</li>
+               <li>JavaScript, JQuery, Ajax, AngularJS JavaScript, JQuery, Ajax, AngularJS JavaScript, JQuery, Ajax, AngularJS JavaScript, JQuery, Ajax, AngularJS</li>
+            </ul>
+           </div>
+            
+         </div><!-- end of Experience-->
+
+      </div><!-- end of inner container -->
+      </div><!-- end of col-12 -->
       </div><!-- end of template -->
+
    </div><!-- end of container -->
 
    <!-- Bootstrap javaScript -->

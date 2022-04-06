@@ -1,14 +1,7 @@
 body {
     background: linear-gradient(to right, #f2709c, #ff9472);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-
-/* .container {
-    background-color: aquamarine;
-} */
-
-/* header {
-    background-color: #bd72ff;
-} */
 
 .form-wrap {
     background: rgba(0, 0, 0, 0.5);
@@ -23,41 +16,26 @@ body {
     font-family: 'Times New Roman', Times, serif
 } 
 
-/* .my-form input, textarea {
-    background-color: rgba(0, 0, 0, 0.75);
-    outline: none;
-    border: none;
-    color: rgb(125, 122, 122);
-}  */
-/*
-.form-group .upload-img {
-    display: block;
-    background-color: #f2709c;
-} 
-
-.form-group ::placeholder {
-    font-family: Georgia, 'Times New Roman', Times, serif;
-}
-
-button {
-    padding: 8px 10px;
-    background-color:#f2709c;
-    border: none;
-    border-radius: 3px;
-    margin-bottom: 10px;
-    cursor: pointer; 
-}
-
-button:hover {
-     background-color: #333;
-    color: #f2709c; 
-}
-*/
  .resume-template {
     background-color: white;
 } 
 
-.resume-template img {
-    width: 200px;
+.resume-template .inner-container h1,
+.resume-template .inner-container h3 {
+    text-transform: uppercase;
+    font-weight: 600;
 }
+
+.resume-template .inner-container h5 {
+    text-transform: capitalize;
+    font-weight: 600;
+}
+
+.personal-info p, address {
+    margin-bottom: 0;
+}
+
+.profile {
+    
+} 
 
