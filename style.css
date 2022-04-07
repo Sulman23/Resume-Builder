@@ -21,6 +21,7 @@ body {
 } 
 
 .resume-template .inner-container h1,
+.resume-template .inner-container h2,
 .resume-template .inner-container h3 {
     text-transform: uppercase;
     font-weight: 600;
@@ -31,7 +32,7 @@ body {
     font-weight: 600;
 }
 
-.personal-info p, address {
+.personal-info p {
     margin-bottom: 0;
 }
 
