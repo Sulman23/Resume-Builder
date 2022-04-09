@@ -18,15 +18,21 @@
 <body>
 
    <!-- Header -->
-   <header class="row p-1 bg-dark bg-gradient text-white">
-      <div class="col-11 text-center">
-         <h1>SA Resume Builder</h1>
-      </div>
-      <div class="col-1">
-         <button class="btn btn-warning mt-2">
-            <i class="bi bi-moon"></i>
-         </button>
-      </div>
+   <header class="row p-1 bg-dark text-white">
+      
+         <div class="col-10 text-center">
+            <h1>SA Resume Builder</h1>
+         </div>
+         <div class="col-2">
+            <button class="btn btn-warning mt-2">
+               <i class="bi bi-moon"></i>
+            </button>
+            <button class="btn btn-info mt-2">
+               <i class="bi bi-printer"></i>
+               Print
+            </button>
+         </div>
+     
    </header>
    <!-- end of Header -->
 
@@ -70,7 +76,7 @@
                   <!-- for Email  -->
                   <div class="mb-2">
                      <label for="email" class="form-label">Email</label>
-                     <input type="email" id="Email" class="form-control" placeholder="abc@email.com">
+                     <input type="email" id="email" class="form-control" placeholder="abc@email.com">
                   </div>
                   <!-- for Phone -->
                   <div class="mb-2">
@@ -116,37 +122,37 @@
                   <h6>React Development</h6>
                   <div class="mb-2">
                      <!-- <label for="" class="form-label">React Development</label> -->
-                     <input type="text" id="" class="form-control" placeholder="React">
+                     <input type="text" id="reactDev" class="form-control mb-2" placeholder="React">
                      <!-- Add more button for Skills -->
-                     <button type="submit" id="" class="btn btn-sm btn-info mb-2">Add More</button>
+                     <button type="submit" id="reactDevBtn" class="btn btn-sm btn-info mb-2">Add More</button>
                   </div>
                   <h6>Frontend Development</h6>
                   <div class="mb-2">
                      <!-- <label for="" class="form-label">React Development</label> -->
-                     <input type="text" id="" class="form-control" placeholder="HTML">
+                     <input type="text" id="frontendDev" class="form-control mb-2" placeholder="HTML">
                      <!-- Add more button for Skills -->
-                     <button type="submit" id="" class="btn btn-sm btn-info mb-2">Add More</button>
+                     <button type="submit" id="frontendDevBtn" class="btn btn-sm btn-info mb-2">Add More</button>
                   </div>
                   <h6>Backend Development</h6>
                   <div class="mb-2">
                      <!-- <label for="" class="form-label">React Development</label> -->
-                     <input type="text" id="" class="form-control" placeholder="PHP">
+                     <input type="text" id="backendDev" class="form-control mb-2" placeholder="PHP">
                      <!-- Add more button for Skills -->
-                     <button type="submit" id="btnSkill" class="btn btn-sm btn-info mb-2">Add More</button>
+                     <button type="submit" id="backendDevBtn" class="btn btn-sm btn-info mb-2">Add More</button>
                   </div>
                   <h6>CMS Development</h6>
                   <div class="mb-2">
                      <!-- <label for="" class="form-label">React Development</label> -->
-                     <input type="text" id="" class="form-control" placeholder="WordPress">
+                     <input type="text" id="cmsDev" class="form-control mb-2" placeholder="WordPress">
                      <!-- Add more button for Skills -->
-                     <button type="submit" id="" class="btn btn-sm btn-info mb-2">Add More</button>
+                     <button type="submit" id="cmsDevBtn" class="btn btn-sm btn-info mb-2">Add More</button>
                   </div>
-                  <h6>Other</h6>
+                  <h6>Others</h6>
                   <div class="mb-2">
                      <!-- <label for="" class="form-label">React Development</label> -->
-                     <input type="text" id="" class="form-control" placeholder="Scrum Master">
+                     <input type="text" id="others" class="form-control mb-2" placeholder="Scrum Master">
                      <!-- Add more button for Skills -->
-                     <button type="submit" id="btnSkill" class="btn btn-sm btn-info mb-2">Add More</button>
+                     <button type="submit" id="othersBtn" class="btn btn-sm btn-info mb-2">Add More</button>
                   </div>
 
 
@@ -164,13 +170,13 @@
                   <h2>Education</h2>
                   <div class="education mb-2">
                      <!-- <label for="" class="form-label">Education</label> -->
-                     <input type="text" id="" class="form-control mb-1" placeholder="Your Degree eg: Masters in Computer Science">
-                     <input type="text" id="" class="form-control" placeholder="Intitute eg: GC University Lahore">
-                     <input type="number" id="" class="form-control" placeholder="Starting Year eg: 2009">
-                     <input type="number" id="" class="form-control" placeholder="Ending Year eg: 2011">
+                     <input type="text" id="degree" class="form-control mb-1" placeholder="Your Degree eg: Masters in Computer Science">
+                     <input type="text" id="intitute" class="form-control mb-1" placeholder="Intitute eg: GC University Lahore">
+                     <input type="number" id="startingYear" class="form-control mb-1" placeholder="Starting Year eg: 2009">
+                     <input type="number" id="endingYear" class="form-control mb-1" placeholder="Ending Year eg: 2011">
                   </div>
                   <!-- Add more button for education -->
-                  <button type="submit" id="btnEdu" class="btn btn-sm btn-info mb-2">Add More</button>
+                  <button type="submit" id="addEdu" class="btn btn-sm btn-info mb-2">Add More</button>
 
             </form>
          </div><!-- end of form -->
@@ -195,12 +201,12 @@
                      <p>abc@email.com</p>
                      <!-- Phone -->
                      <p>00921234567</p>
-                     <!-- Github -->
-                     <p>www.github.com</p>
                      <!-- country House No, Street No -->
                      <p>HN: 123, St: 123,</p>
                      <!-- City District Country -->
                      <p>Distic: ABC, State: Los Angels، USA</p>
+                     <!-- Github -->
+                     <p>www.github.com</p>
                   </div>
                </div><!-- end of Personal Info -->
 
