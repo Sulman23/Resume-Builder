@@ -43,11 +43,44 @@ const startingYear = document.getElementById("startingYear");
 const endingYear = document.getElementById("endingYear");
         // Adding Education
 const addEdu = document.getElementById("addEdu");
+// Genrate Button
+const genBtn = document.getElementById("genBtn");
 
-
-
-console.log(fullName);
+// Resume Template DOM Elements Selecting
+        // Template Personal Info
+const tempName = document.querySelector(".personal-info #tempName");
+const tempJob = document.querySelector(".personal-info #tempJob");
+const tempEmail = document.querySelector(".personal-info #tempEmail");
+const tempPhone = document.querySelector(".personal-info #tempPhone");
+const tempAddress = document.querySelector(".personal-info #tempAddress");
+const tempCity = document.querySelector(".personal-info #tempCity");
+const tempDist = document.querySelector(".personal-info #tempDist");
+const tempCountry = document.querySelector(".personal-info #tempCountry");
+const tempGithub = document.querySelector(".personal-info #tempGithub");
+// const tempImage = document.querySelector(".personal-info #tempImage");
+        // Template Proffessional Info
+const tempProfile = document.querySelector(".profile #tempSummry");
 
 // Functions
+        // Genrating Resume
+const genrateResume = (e) => {
+        e.preventDefault();
+        // Entering Personal Info
+        tempName.innerText = fullName.value;
+        tempJob.innerText = job.value;
+        tempEmail.innerText = email.value;
+        tempPhone.innerText = phone.value;
+        tempAddress.innerText = address.value;
+        tempCity.innerText = city.value;
+        tempDist.innerText = district.value;
+        tempCountry.innerText = country.value;
+        tempGithub.innerText = github.value;
+        // Entering Proffessional Summry
+        tempProfile.innerText = summry.value
+        // Skills
+        console.log(fullName.value);
+}
 
 // Event Listeners
+        // Genrate Button
+genBtn.addEventListener("click", genrateResume);

@@ -177,7 +177,9 @@
                   </div>
                   <!-- Add more button for education -->
                   <button type="submit" id="addEdu" class="btn btn-sm btn-info mb-2">Add More</button>
-
+                  <div class="gen-btn text-center">
+                     <button type="submit" id="genBtn" class="btn btn-success">Genrate Resume</button>
+                  </div>
             </form>
          </div><!-- end of form -->
       </div><!-- end of form builder row -->
@@ -194,26 +196,26 @@
 
                   <div class="col-md-9">
                      <!-- Name -->
-                     <h1>Micheal Jhon Smith</h1>
+                     <h1 id="tempName">Micheal Jhon Smith</h1>
                      <!-- Job Title -->
-                     <h2>REACT JS Devloper</h2> 
+                     <h2 id="tempJob">REACT JS Devloper</h2> 
                      <!-- Email -->
-                     <p>abc@email.com</p>
+                     <p id="tempEmail">abc@email.com</p>
                      <!-- Phone -->
-                     <p>00921234567</p>
+                     <p id="tempPhone">00921234567</p>
                      <!-- country House No, Street No -->
-                     <p>HN: 123, St: 123,</p>
+                     <p><span id="tempAddress">HN: 30</span>, <span id="tempCity">St: 123</span></p>
                      <!-- City District Country -->
-                     <p>Distic: ABC, State: Los Angels، USA</p>
+                     <p><span id="tempDist">ABC</span>, <span id="tempCountry">ABC</span></p>
                      <!-- Github -->
-                     <p>www.github.com</p>
+                     <p id="tempGithub">www.github.com</p>
                   </div>
                </div><!-- end of Personal Info -->
 
                <div class="row profile">
                   <div class="col-12 ">
                      <h3>Proffesional Summry</h3>
-                     <p>
+                     <p id="tempSummry">
                         Knowledgeable and Skilled Software Developer commended for contributing to innovative,
                         groundbreaking software solutions to meet business demands and needs. Skilled at
                         translating business requirements into viable, scalable solutions. Knowledgeable and Skilled
