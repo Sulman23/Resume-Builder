@@ -78,9 +78,55 @@ const genrateResume = (e) => {
         // Entering Proffessional Summry
         tempProfile.innerText = summry.value
         // Skills
-        console.log(fullName.value);
+    
+}
+
+// Adding React Skills
+const addReactSkills = (e) => {
+        e.preventDefault();
+        let newInput = '<input type="text" class="form-control mb-2" placeholder="React">';
+        reactDevBtn.insertAdjacentHTML("beforebegin", newInput);
+}
+// Adding Frontend Skills
+const addFrontendSkills = (e) => {
+        e.preventDefault();
+        let newInput = '<input type="text" class="form-control mb-2" placeholder="HTML">';
+        frontendDevBtn.insertAdjacentHTML("beforebegin", newInput);
+}
+// Adding Backend Skills
+const addBackendSkills = (e) => {
+        e.preventDefault();
+        let newInput = '<input type="text" class="form-control mb-2" placeholder="PHP">';
+        backendDevBtn.insertAdjacentHTML("beforebegin", newInput);
+}
+// Adding CMS Skills
+const addCmsSkills = (e) => {
+        e.preventDefault();
+        let newInput = '<input type="text" class="form-control mb-2" placeholder="WordPress">';
+        cmsDevBtn.insertAdjacentHTML("beforebegin", newInput);
+}
+// Adding Other Skills
+const addOtherSkills = (e) => {
+        e.preventDefault();
+        let newInput = '<input type="text" class="form-control mb-2" placeholder="Scrum Master">';
+        othersBtn.insertAdjacentHTML("beforebegin", newInput);
+}
+// Adding Education
+const addEducation = (e) => {
+        e.preventDefault();
+        let eduDiv = '<div id="edu" class="education mb-2"><input type="text" id="degree" class="form-control mb-1" placeholder="Your Degree eg: Masters in Computer Science"><input type="text" id="intitute" class="form-control mb-1" placeholder="Intitute eg: GC University Lahore"><input type="number" id="startingYear" class="form-control mb-1" placeholder="Starting Year eg: 2009"><input type="number" id="endingYear" class="form-control mb-1" placeholder="Ending Year eg: 2011"></div>'
+        addEdu.insertAdjacentHTML("beforebegin", eduDiv);      
 }
 
 // Event Listeners
         // Genrate Button
 genBtn.addEventListener("click", genrateResume);
+reactDevBtn.addEventListener("click", addReactSkills);
+frontendDevBtn.addEventListener("click", addFrontendSkills);
+backendDevBtn.addEventListener("click", addBackendSkills);
+cmsDevBtn.addEventListener("click", addCmsSkills);
+othersBtn.addEventListener("click", addOtherSkills);
+        // Add Education
+addEdu.addEventListener("click", addEducation);
+
+
