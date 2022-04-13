@@ -31,7 +31,7 @@ const cmsDevBtn = document.getElementById("cmsDevBtn");
 const others = document.getElementById("others");
 const othersBtn = document.getElementById("othersBtn");
     // Experience
-
+const addDetailBtn = document.getElementById("addDetailBtn");
     // Education
         // Degree
 const degree = document.getElementById("degree");
@@ -111,10 +111,22 @@ const addOtherSkills = (e) => {
         let newInput = '<input type="text" class="form-control mb-2" placeholder="Scrum Master">';
         othersBtn.insertAdjacentHTML("beforebegin", newInput);
 }
+// Adding Details
+const addDetails = (e) => {
+        e.preventDefault();
+        let detail = '<input type="text" id="workDetail" class="form-control mb-1" placeholder="Detail about your work at company">'
+        addDetailBtn.insertAdjacentHTML("beforebegin", detail);      
+}
+// Adding Experience
+const addExperience = (e) => {
+        e.preventDefault();
+        let exp = '<input type="text" id="role" class="form-control mb-1" placeholder="Your Role: Web Developer"><input type="text" id="company" class="form-control mb-1" placeholder="Company: Amazon Pvt Ltd - USA"><input type="number" id="startMonth" class="form-control mb-1" placeholder="Starting Month eg: 02"><input type="number" id="startingYear" class="form-control mb-1" placeholder="Starting Year eg: 2009"><input type="number" id="endingMonth" class="form-control mb-1" placeholder="Ending Month eg: 12"><input type="number" id="endingYear" class="form-control mb-1" placeholder="Ending Year eg: 2011"><input type="text" id="workDetail" class="form-control mb-1" placeholder="Detail about your work at company"><div class="detailBtn text-center"><button type="submit" id="addDetails" class="btn btn-sm btn-info mb-2">Add Details</button></div>'
+        addExp.insertAdjacentHTML("beforebegin", exp);      
+}
 // Adding Education
 const addEducation = (e) => {
         e.preventDefault();
-        let eduDiv = '<div id="edu" class="education mb-2"><input type="text" id="degree" class="form-control mb-1" placeholder="Your Degree eg: Masters in Computer Science"><input type="text" id="intitute" class="form-control mb-1" placeholder="Intitute eg: GC University Lahore"><input type="number" id="startingYear" class="form-control mb-1" placeholder="Starting Year eg: 2009"><input type="number" id="endingYear" class="form-control mb-1" placeholder="Ending Year eg: 2011"></div>'
+        let eduDiv = '<div id="edu" class="education mb-2"><input type="text" id="degree" class="form-control mb-1" placeholder="Your Degree eg: Masters in Computer Science"><input type="text" id="institute" class="form-control mb-1" placeholder="Intitute eg: GC University Lahore"><input type="number" id="startingYear" class="form-control mb-1" placeholder="Starting Year eg: 2009"><input type="number" id="endingYear" class="form-control mb-1" placeholder="Ending Year eg: 2011"></div>'
         addEdu.insertAdjacentHTML("beforebegin", eduDiv);      
 }
 
@@ -126,6 +138,11 @@ frontendDevBtn.addEventListener("click", addFrontendSkills);
 backendDevBtn.addEventListener("click", addBackendSkills);
 cmsDevBtn.addEventListener("click", addCmsSkills);
 othersBtn.addEventListener("click", addOtherSkills);
+        // Add Experience
+addDetailBtn.addEventListener("click", addDetails);
+console.log(addDetailBtn);
+        // Add Experience
+addExp.addEventListener("click", addExperience);
         // Add Education
 addEdu.addEventListener("click", addEducation);
 
