@@ -16,8 +16,10 @@ const summry = document.getElementById("summry");
     // Skills
         // React Development
 const reactDev = document.getElementById("reactDev");
-const reactDevBtn = document.getElementById("reactDevBtn");
+let reactInput = reactDev.querySelectorAll(".react-dev");
 
+        // adding inpyt button
+const reactDevBtn = document.getElementById("reactDevBtn");
         // Frontend Development
 const frontendDev = document.getElementById("frontendDev");
 const frontendDevBtn = document.getElementById("frontendDevBtn");
@@ -60,6 +62,8 @@ const tempGithub = document.querySelector(".personal-info #tempGithub");
 // const tempImage = document.querySelector(".personal-info #tempImage");
         // Template Proffessional Info
 const tempProfile = document.querySelector(".profile #tempSummry");
+        // React skills List
+// let reactList = document.querySelector("#reactSkillsList li");
 
 // Functions
         // Genrating Resume
@@ -76,15 +80,18 @@ const genrateResume = (e) => {
         tempCountry.innerText = country.value;
         tempGithub.innerText = github.value;
         // Entering Proffessional Summry
-        tempProfile.innerText = summry.value
+        tempProfile.innerText = summry.value;
         // Skills
+        console.log(reactInput);
+        reactList.innerText = reactInput.value;
+             
     
 }
 
 // Adding React Skills
 const addReactSkills = (e) => {
         e.preventDefault();
-        let newInput = '<input type="text" class="form-control mb-2" placeholder="React">';
+        let newInput = '<input type="text" class="form-control mb-2 react-dev" placeholder="React">';
         reactDevBtn.insertAdjacentHTML("beforebegin", newInput);
 }
 // Adding Frontend Skills
@@ -130,6 +137,9 @@ const addEducation = (e) => {
         addEdu.insertAdjacentHTML("beforebegin", eduDiv);      
 }
 
+
+
+
 // Event Listeners
         // Genrate Button
 genBtn.addEventListener("click", genrateResume);
@@ -140,7 +150,6 @@ cmsDevBtn.addEventListener("click", addCmsSkills);
 othersBtn.addEventListener("click", addOtherSkills);
         // Add Experience
 addDetailBtn.addEventListener("click", addDetails);
-console.log(addDetailBtn);
         // Add Experience
 addExp.addEventListener("click", addExperience);
         // Add Education
